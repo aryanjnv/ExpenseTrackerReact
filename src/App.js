@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import AuthForm from './Components/SignUp/AuthForm';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -8,6 +7,7 @@ import ContactDetails from './Components/ContactDetails/ContactDetails';
 import { AuthContextprovider } from './Components/AuthContext/auth-context';
 import Profile from './Components/Profile/Profile';
 import VerifyEmail from './Components/VerifyEmail/VerifyEmail';
+import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
        <Route path='/contactdetails' element={<ContactDetails/>}/>
        <Route path='/profile' element={<Profile/>}/>
        <Route path='/verifyEmail' element={<VerifyEmail/>}/>
+       <Route path='/forgotpassword' element={<ForgotPassword/>}/>
        </Routes>
    {/* <SignUp/> */}
    </BrowserRouter>
