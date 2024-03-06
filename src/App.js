@@ -9,11 +9,13 @@ import Profile from './Components/Profile/Profile';
 import VerifyEmail from './Components/VerifyEmail/VerifyEmail';
 import ForgotPassword from './Components/ForgotPassword/ForgotPassword';
 import DailyExpenses from './Components/DailyExpenses/DailyExpenses';
+import CartProvider from './Components/CartContext/CartProvider';
 
 function App() {
   return (
    
     <div>
+      <CartProvider>
       <AuthContextprovider>
        <BrowserRouter>
        <Navbar/>
@@ -29,6 +31,7 @@ function App() {
    {/* <SignUp/> */}
    </BrowserRouter>
    </AuthContextprovider>
+   </CartProvider>
     </div>
   );
 }
